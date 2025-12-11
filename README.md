@@ -1,7 +1,7 @@
-# XRoboToolkit-Unity-Client Project Documentation
+# Xense-VR-Client Project Documentation
 
 ## Project Overview
-`XRoboToolkit-Unity-Client` is a Unity-based software developed for PICO devices to facilitate robot training and remote teleoperation. It works in conjunction with PC-side software to achieve robot training and teleoperation functionalities.
+`Xense-VR-Client` is a Unity-based software developed for PICO devices to facilitate robot training and remote teleoperation. It works in conjunction with PC-side software to achieve robot training and teleoperation functionalities.
 
 ## Unity UI Main Panel Reference
 
@@ -73,28 +73,13 @@ On the main panel, select preferred pose data to be collected, click Record. You
 
 1. Connect both XR headsets to the same network.
 2. Make sure that the camera to be used as the camera source has VST camera permission (requires special approval).
-3. Open **XRRoboToolkit** on both headsets.
+3. Open **XenseVrToolkit** on both headsets.
 > **Note:** The headset serving as robot eyes (H1) should have the camera permission enabled, while the other headset (H2) is for the human operator side.
 4. H1: Remember the IP of the VR headset and **DON'T DO ANYTHING**.
 5. H2: On the Camera panel, Select **PICO4U** as the video source, Click Listen, input H1's IP, and click Confirm.
 6. H2: You should now be able to see the live camera. Press B button on the right-hand controller to switch between side-by-side views and stereo-3D views.
 7. H2: If you close the live camera window, you can simply repeat Step 5.
-8. If you want to stop the camera streaming, quit **XRRoboToolkit** on H1 and H2.
-
-### Remote stereo vision sync between ZED camera (Orin) and XR headset
-
-1. Clone [XRoboToolkit-Orin-Video-Sender](https://github.com/XR-Robotics/XRoboToolkit-Orin-Video-Sender.git) on Orin.
-2. Build 
-3. Run the following command on Orin:
-   ```bash
-   ./OrinVideoSender --listen <IP of Orin>:13579
-   ```
-4. Open **XRRoboToolkit** on the XR headset.
-5. On the Camera panel, select "ZEDMINI" as the video source.
-6. Click "Listen", input the IP of Orin, and click Confirm.
-7. You should now be able to see the live camera. Press B button on the right-hand controller to switch between side-by-side views and stereo-3D views.
-8. If you close the live camera window, you can simply repeat Step 6.
-9. If you want to stop the camera streaming, quit **XRRoboToolkit** on the XR headset and stop the OrinVideoSender on Orin.
+8. If you want to stop the camera streaming, quit **XenseVrToolkit** on H1 and H2.
 
 
 ## Directory Structure

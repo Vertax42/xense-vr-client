@@ -1,7 +1,7 @@
-# XRoboToolkit-Unity-Client 项目说明
+# Xense-VR-Client 项目说明
 
 ## 项目概述
-`XRoboToolkit-Unity-Client` 是一个基于PICO设备用Unity引擎开发的服务于机器人训练与遥控的软件。本软件与PC端软件协助完成机器人的训练与遥控。
+`Xense-VR-Client` 是一个基于PICO设备用Unity引擎开发的服务于机器人训练与遥控的软件。本软件与PC端软件协助完成机器人的训练与遥控。
 ## 功能特性
 - **训练数据录制**可以将VST图像与位姿数据同步录制为mp4文件保存到本机的Download目录。
 - **机器人遥控**：将本机位姿数据传输到PC机器人端，用来遥控机器人。
@@ -123,7 +123,3 @@ PICO Unity官方SDK，官方下载地址：https://developer.picoxr.com/zh/resou
 - 位姿数据包大小：56字节/帧
 - 视频编码比特率：动态调整（2-8Mbps）
 - 网络容错：3次重传+前向纠错
-
-### TIP
-### 必要软件
-- PICO企业设置（如遇USB网络分享问题，请联系我们）
